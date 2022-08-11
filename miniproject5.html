@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../miniproject5/style.css">
+</head>
+<body>
+    <ul>
+        <li> 
+            <input type="text"
+                   class="input11"
+                   value="Background Color"
+            >
+        </li>
+        <li>
+            <input type="text"
+                   class="input12"
+                   value="Font Color"
+            >
+        </li>
+        <li>
+            <input type="number"
+                   class="input13"
+                   value="Font Size"
+            >
+        </li>
+    </ul>
+    <ul>
+        <li> 
+            <input type="text"
+                   class="input21"
+                   value="Background Color"
+            >
+        
+        </li>
+        <li>
+            <input type="text"
+                   class="input22"
+                   value="Font Color"
+            >
+        </li>
+        <li>
+            <input type="number"
+                   class="input23"
+                   value="Font Size"
+            >
+        </li>
+    </ul>
+    <div>  </div>
+    <div class="square_one">
+        <h1>square1 </h1>
+    </div>
+    <div class="square_two">
+        <h1>square2 </h1>
+    </div>
+
+
+    <script>
+        var square1 = document.querySelector(".input11");
+        var square2 = document.querySelector(".input21");
+        var square1backgroundColor = document.querySelector(".square_one");
+        var square2backgroundColor = document.body.querySelector(".square_two");
+
+        square1.addEventListener("keydown", function(event) {
+            square1backgroundColor.style.backgroundColor = event.target.value;
+        });
+
+        square2.addEventListener("keydown", function(event) {
+            square2backgroundColor.style.backgroundColor = event.target.value;
+        });
+
+        var square1 = document.querySelector(".input12");
+        var square2 = document.querySelector(".input22");
+        var square1textColor = document.querySelector(".square_one");
+        var square2textColor = document.body.querySelector(".square_two");
+
+        square1.addEventListener("keydown", function(event) {
+            square1textColor.style.color = event.target.value;
+        });
+
+        square2.addEventListener("keydown", function(event) {
+            square2textColor.style.color = event.target.value;
+        });
+        
+        var square1 = document.querySelector(".input13");
+        var square2 = document.querySelector(".input23");
+        var square1textSize = document.querySelector(".square_one");
+        var square2textSize = document.body.querySelector(".square_two");
+
+        square1.addEventListener("keydown", function(event) {
+            square1textSize.style.fontSize = event.target.value + "px";
+        });
+
+        square2.addEventListener("keydown", function(event) {
+            square2textSize.style.fontSize = event.target.value + "px";
+        });
+
+
+    </script>
+    
+</body>
+</html>
